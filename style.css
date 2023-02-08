@@ -1,0 +1,246 @@
+:root {
+  --primary: #1a4d2e;
+  --secondary: #eb6767;
+  --light: #f6f7f8;
+  --dark: #30393f;
+  --darken: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f1e7e7;
+}
+
+.container-fluid {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: var(--light);
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 0px;
+}
+
+.btn:hover {
+  color: var(--light);
+  background-color: #24613d;
+}
+
+.btn-center {
+  text-align: center;
+}
+
+.btn2 {
+  background-color: var(--primary);
+  color: var(--light);
+  font-weight: 500;
+  font-size: 20px;
+  border: 2px solid;
+}
+
+.btn2:hover {
+  background: transparent;
+  color: var(--primary);
+}
+
+h2 {
+  color: var(--primary);
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bolder;
+  font-size: 3rem;
+  word-spacing: 5px;
+}
+
+h5 {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* navbar */
+.navbar {
+  background-color: var(--secondary);
+}
+
+.navbar-brand {
+  color: var(--primary);
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* title section */
+h1 {
+  color: var(--dark);
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 600;
+  font-size: 4.7rem;
+  word-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.heading {
+  padding: 8% 10%;
+}
+
+h1 > sup {
+  font-size: 1rem;
+}
+h1 > span {
+  color: var(--primary);
+}
+
+/* products-section */
+.feature {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding-top: 10px;
+}
+
+.sub-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cart {
+  margin-left: 5rem;
+}
+
+.card-title {
+  color: #5e5f60;
+}
+
+.card-text {
+  color: #8b979f;
+  font-size: 15px;
+}
+
+.price {
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* .price2 {
+  color: #8b979f;
+  text-decoration: line-through;
+  font-size: 13px;
+} */
+
+.fa-arrow-right,
+.fa-arrow-down {
+  margin-left: 10px;
+}
+
+/* liked-btn */
+.like-img {
+  position: relative;
+}
+
+.like-img .btn {
+  background-color: var(--secondary);
+  position: absolute;
+  top: 10%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* footer */
+.footer {
+  background-color: var(--secondary);
+}
+
+.content {
+  color: var(--dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+.name {
+  color: var(--darken);
+}
+
+.link-el {
+  cursor: pointer;
+}
+
+.link-el:hover {
+  color: var(--darken);
+}
+
+/* responsive CSS */
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: normal;
+  }
+
+  .heading {
+    margin-top: 2%;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1220px) {
+  .heading {
+    margin-top: 1%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    letter-spacing: normal;
+  }
+
+  .like-img .btn {
+    background-color: var(--primary);
+    position: absolute;
+    top: 12%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .cart {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .like-img .btn {
+    background-color: var(--primary);
+    position: absolute;
+    top: 11%;
+    left: 91%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: 0.5rem;
+  }
+  .heading {
+    margin-top: 10%;
+  }
+  .cart {
+    margin-left: 9rem;
+  }
+}

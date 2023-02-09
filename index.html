@@ -30,10 +30,12 @@
 </head>
 
 <body>
+
+    <!-- home start -->
     <section id="home">
 
         <!-- navbar start-->
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Eva</a>
 
@@ -45,16 +47,19 @@
                 <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
                     <ul class="navbar-nav align-items-center ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#products">Products</a>
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-heart"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -76,24 +81,79 @@
         </nav>
         <!-- navbar end -->
 
-        <!-- title start -->
-        <div class="heading">
-            <form class="d-flex mb-4 fix-form" role="search">
-                <input class="form-control form-control-md" type="search" placeholder="Search products..."
-                    aria-label="Search">
-                <button class="btn ms-2" type="submit">Search</button>
-            </form>
-            <h1 class="pt-4"><sup>Introduction</sup>Eva is an online store of the sustainable products that meet your
-                needs as well
-                as to
-                <span>the environment</span>.
-            </h1>
-            <div class="btn-center">
-                <button class="btn2 my-4 py-3 px-4">Shop Now<i class="fa-solid fa-arrow-down"></i></button>
+        <!-- form start -->
+        <main class="title">
+            <div class="form-fix">
+                <form class="d-flex mb-4" role="search">
+                    <input class="form-control form-control-lg" type="search" placeholder="Search products..."
+                        aria-label="Search">
+                    <button class="btn ms-2" type="submit">Search</button>
+                </form>
+            </div>
+
+            <!-- title start -->
+
+            <div class="content">
+                <h3>Eva<img class="mb-3" src="./Assets/favicon2.png" style="width: 100px;"></img></h3>
+                <span>Eco-Friendly & Stylish Bags,</span>
+                <p>is an online store of the sustainable products that meet your
+                    needs as well
+                    as to the environment. So why wait?
+                    Switch
+                    to an eco-friendly lifestyle with our jute bags today and make a difference!</p>
+                <a href="#" class="btn btn-big">Shop Now</a>
+            </div>
+        </main>
+        <!-- title end -->
+
+    </section>
+    <!-- home end -->
+
+    <section>
+
+    </section>
+
+    <section class="card-fix">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 cardes">
+                <div class="card py-2">
+                    <div class="card-body">
+
+                        <h5 class="card-title"><i class="fa-solid fa-cart-flatbed-suitcase me-2"></i>No Delivery Fee
+                        </h5>
+                        <p class="card-text ms-5">on all orders</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 cardes">
+                <div class="card py-2">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-sack-dollar me-2"></i>Easy Return</h5>
+                        <p class="card-text ms-5">100% Moneyback*</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 cardes">
+                <div class="card py-2">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-gifts me-2"></i>Gifts Cards</h5>
+                        <p class="card-text ms-5">on all orders</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 cardes">
+                <div class="card py-2">
+                    <div class="card-body">
+                        <h5 class="card-title"> <i class="fa-solid fa-credit-card me-2"></i>
+                            Assured Pay</h5>
+                        <p class="card-text ms-5">Protected By UPI</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- title end -->
+
 
     <!-- products start -->
     <section id="products">
@@ -106,7 +166,7 @@
                     <div class="card">
                         <div class="like-img">
                             <img src="./Assets/img1.png" class="card-img-top" alt="A Street in Europe">
-                            <button class="btn"><i class="fa-solid fa-heart"></i>
+                            <button class="btn like-btn"><i class="fa-solid fa-heart"></i>
 
                             </button>
                         </div>
@@ -499,7 +559,7 @@
             </div>
         </div>
         <div class="btn-center">
-            <button class="btn2 my-4 py-3 px-4">See More<i class="fa-solid fa-arrow-right"></i></button>
+            <button class="btn btn2 my-4 py-3 px-4">See More<i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </section>
     <!-- products end -->
@@ -509,47 +569,54 @@
     <div id="contact" class="container-fluid text-body footer mt-5" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <h2 class="mb-3">Eva</h2>
-                    <p class="content mb-2">EVA Jute bags are eco-friendly and sustainable alternatives to traditional
-                        bags
-                        made from
-                        synthetic materials. They are made from natural fibers and are durable, lightweight, and
-                        stylish. Whether you are
-                        looking for a functional and practical solution or a stylish and trendy accessory, a jute bag is
+                    <p class="text-left mb-2 para">EVA Jute bags are eco-friendly and sustainable alternatives to
+                        traditional
+                        bags.
+                        Whether you are
+                        looking for a functional and practical solution or a stylish and trendy accessory, a Eva jute
+                        bag is
                         a perfect choice.</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="mb-4 mt-3">Newsletter</h5>
-                    <p class="content">Subscribe to get in touch.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Type your email here">
-                        <button type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2"><i
-                                class="fa-brands fa-telegram"></i></button>
-                    </div>
-                    <div class="pt-4">
-                        <button class="btn social"><i class="fa-brands fa-twitter"></i></button>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4 mt-3">Contact Info</h5>
+                    <p class="link-el" href="#home">+ 05141 5685 5412</p>
+                    <p class="link-el" href="#home">eva.bags@gmail.com</p>
+                    <p class="link-el" href="#home">Delhi, India - 12345</p>
+                    <h5 class="mb-3 mt-4">Follow Us:</h5>
+                    <p class="link-el" href="#home"><button class="btn social"><i
+                                class="fa-brands fa-twitter"></i></button>
                         <button class="btn social"><i class="fa-brands fa-facebook"></i></button>
                         <button class="btn social"><i class="fa-brands fa-linkedin"></i></button>
                         <button class="btn social"><i class="fa-brands fa-youtube"></i></button>
-                    </div>
+                    </p>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <h5 class="mb-4 text-left mt-3">Quick Links</h5>
-                    <p class="content link-el" href="#home">Home</p>
-                    <p class="content link-el" href="#home">Login</p>
-                    <p class="content link-el" href="#home">Register</p>
-                    <p class="content link-el" href="#home">About Us</p>
-                    <p class="content link-el" href="#home">Contact Us</p>
+                    <p class="link-el" href="#home"><i class="fa-solid fa-store me-2"></i>Home</p>
+
+                    <p class="link-el" href="#home"><i class="fa-solid fa-circle-info me-2"></i>About</p>
+                    <p class="link-el" href="#home"><i class="fa-solid fa-bag-shopping me-2"></i> Products</p>
+                    <p class="link-el" href="#home"><i class="fa-solid fa-phone me-2"></i> Contact</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4 text-left mt-3">Extra Links</h5>
+                    <p class="link-el" href="#home"><i class="fa-solid fa-user me-2"></i>My Account</p>
+                    <p class="link-el" href="#home"><i class="fa-solid fa-cart-flatbed-suitcase me-2"></i>My Order
+                    </p>
+                    <p class="link-el" href="#home"><i class="fa-solid fa-heart me-2"></i>My Favorite</p>
+                    <p class="link-el" href="#home"><i class="fa-solid fa-gear me-2"></i>Setting</p>
                 </div>
 
             </div>
         </div>
 
+        <hr>
         <!-- copyright section -->
-        <div class="container text-center content pb-2 mb-md-0">
+        <div class="container text-center pb-3 mb-md-0">
             Designed & Developed By<a href="https://github.com" class="name"> Rashmi Pawar</a>, All Right
             Reserved &copy;
             2023.

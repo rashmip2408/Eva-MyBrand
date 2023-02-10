@@ -299,6 +299,9 @@ hr {
 
 @media screen and (min-width: 300px) and (max-width: 630px) {
   .form-fix {
-    margin-top: 12%;
+    margin-top: 14%;
+  }
+  .content {
+    padding: 0rem 9%;
   }
 }

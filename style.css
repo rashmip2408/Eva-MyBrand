@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: #f1e7e7;
 }
 
@@ -31,12 +31,12 @@ body {
 }
 
 .btn-big {
+  filter: drop-shadow(4px 4px 8px #666565);
   height: 3rem;
   width: 10em;
   font-size: 1.3rem;
   font-weight: 600;
   background-color: var(--darken);
-  border: 2px solid var(--darken);
   border-radius: 25px;
   color: var(--light);
 }
@@ -54,13 +54,14 @@ body {
   background-color: var(--darken);
   color: var(--light);
   font-weight: 500;
-  border: 2px solid;
-  font-size: large;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 h2 {
   color: var(--primary);
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bolder;
   font-size: 3rem;
   word-spacing: 5px;
@@ -73,13 +74,14 @@ h5 {
 
 /* navbar */
 .navbar {
-  background-color: var(--secondary);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  backdrop-filter: blur(25px);
+  box-shadow: 0 0.5rem 1rem rgba(37, 35, 35, 0.1);
 }
 
 .navbar-brand {
   color: var(--primary);
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 2.3rem;
 }
@@ -109,13 +111,14 @@ h5 {
 .content h3 {
   font-size: 5rem;
   color: var(--dark);
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 600;
   word-spacing: 2px;
 }
 
 .content span {
-  font-size: 3rem;
+  font-size: 2.4rem;
+  font-weight: 600;
   color: var(--primary);
   padding: 1rem 0;
   line-height: 1;
@@ -130,7 +133,7 @@ h5 {
 }
 
 .form-fix {
-  padding: 6% 4% 0 4%;
+  padding: 6% 6% 0 6%;
 }
 
 .card-fix {
@@ -157,6 +160,10 @@ h5 {
 
 .cart {
   margin-left: 5rem;
+}
+
+.card {
+  filter: drop-shadow(4px 4px 8px #b6b1b1);
 }
 
 .card-title {
@@ -201,6 +208,11 @@ h5 {
 .footer {
   background-color: var(--secondary);
 }
+
+/* .anime {
+  transform: skewY(-4deg);
+  text-shadow: #24613d 0.1em 0.1em, #102719 0.2em 0.2em, #0c1711 0.3em 0.3em;
+} */
 
 .para {
   color: var(--dark);
@@ -260,15 +272,33 @@ hr {
 
 @media only screen and (min-width: 768px) and (max-width: 900px) {
   .form-fix {
-    margin-top: 5%;
+    margin-top: 6%;
+  }
+
+  .cardes {
+    padding-top: 6%;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .form-fix {
-    margin-top: 10%;
+    margin-top: 8%;
   }
   .cart {
     margin-left: 9rem;
+  }
+  .cardes {
+    padding-top: 10%;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 630px) {
+  .form-fix {
+    margin-top: 12%;
   }
 }

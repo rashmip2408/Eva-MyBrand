@@ -97,10 +97,9 @@ h5 {
 /* title section */
 
 .title {
-  min-height: 100vh;
-  background: url(Assets/bg.png) no-repeat;
-  background-size: cover;
-  background-position: center;
+   min-height: 100vh;
+  background: linear-gradient(123deg, #f6f7f8 0%, #FFFFFF 67%), linear-gradient(180deg, #f6f7f8 0%, #6B0000 100%), linear-gradient(142deg, #F9F5F0 0%, #F9F5F0 33%, #f1e7e7 calc(33% + 1px), #f1e7e7 56%, #eb6767 calc(56% + 1px), #eb6767 62%, #1a4d2e calc(62% + 1px), #1a4d2e 100%);
+background-blend-mode: multiply, overlay, normal;
 }
 
 .content {
@@ -144,6 +143,14 @@ h5 {
   padding-top: 2%;
 }
 
+
+/* ////////////////// */
+.fa-2x:hover{
+color: var(--primary);
+}
+
+
+
 /* product-section */
 .feature {
   text-align: center;
@@ -159,7 +166,7 @@ h5 {
 }
 
 .cart {
-  margin-left: 5rem;
+  margin-left: 6rem;
 }
 
 .card {
@@ -194,8 +201,8 @@ h5 {
 .like-img .btn {
   background-color: var(--primary);
   position: absolute;
-  top: 10%;
-  left: 92%;
+  top: 12%;
+  left: 90%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
@@ -243,8 +250,8 @@ hr {
 /* responsive CSS */
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .like-img .btn {
-    top: 11%;
-    left: 91%;
+    top: 14%;
+    left: 89%;
   }
   .form-fix {
     padding: 8% 4% 0 4%;
@@ -257,12 +264,12 @@ hr {
   }
 
   .like-img .btn {
-    top: 12%;
-    left: 90%;
+    top: 16%;
+    left: 87%;
   }
 
   .cart {
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
 
   .card-fix {
@@ -275,6 +282,9 @@ hr {
     margin-top: 6%;
   }
 
+  .cart {
+    margin-left: 1rem;
+  }
   .cardes {
     padding-top: 6%;
   }
@@ -290,7 +300,7 @@ hr {
     margin-top: 8%;
   }
   .cart {
-    margin-left: 9rem;
+    margin-left: 11rem;
   }
   .cardes {
     padding-top: 10%;
@@ -299,6 +309,6 @@ hr {
 
 @media screen and (min-width: 300px) and (max-width: 630px) {
   .form-fix {
-    margin-top: 14%;
+    margin-top: 12%;
   }
 }
